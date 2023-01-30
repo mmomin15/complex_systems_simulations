@@ -1,10 +1,11 @@
-# complex_systems_simulations
+# complex_systems_simulalations
 
--Dynamics of 1D-maps including bifurcations and orbit diagram
+#### Dynamics of 1D-maps including bifurcations and orbit diagram
 
--Choas - limit cycle and strange attractors in a 3D system with 1 parameter
+#### Choas
+limit cycle and strange attractors in a 3D system with 1 parameter
 
--Gray-scott reaction Diffusion
+#### Gray-scott reaction Diffusion
 
 	#Dynamics of Gray-Scott system are given by two equations:
 
@@ -45,9 +46,9 @@
 	𝒗(𝒊, 𝒋, 𝒕+𝟏)=𝑣(𝑖, 𝑗, 𝑡)+ 𝑟_𝑣∗"Diffusion" [𝑣(𝑖, 𝑗, 𝑡+1)]+ Interaction [𝑣(𝑖, 𝑗, 𝑡+1)]
 
 
--Cellular automatat based model of panic individuals in a room
+#### Cellular automatata based model of panic individuals
 
--Dynamics of rock, paper, scissors, lizard and spock
+#### Dynamics of rock, paper, scissors, lizard and spock
 
 
 <img width="363" alt="Screenshot 2023-01-29 at 7 29 02 PM" src="https://user-images.githubusercontent.com/13388740/215365166-bc38166f-034e-43e9-bc23-07fdbf0f191c.png">
