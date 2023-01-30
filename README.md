@@ -2,6 +2,7 @@
 
 Generage 1D-diagrams including bifurcations
 
+
 Gray-scott reaction Diffusion
 
 Dynamics of Gray-Scott system are given by two equations:
@@ -18,17 +19,22 @@ Dynamics of Gray-Scott system are given by two equations:
 
 𝜕𝑢/𝑑𝑡 and 𝜕𝑣/𝑑𝑡 are the time derivatives describing change in concentration of 𝑈 and 𝑉 over time
 
+
 The equations are partitioned into two parts for simulation:
 
 The diffusion part is calculated based on the 4 nearest neighbors of a cell based on von Neumann neighborhood
+
 Diffusion[𝑢(𝑖, 𝑗, 𝑡+1)]=𝑢(𝑖+1, 𝑗, 𝑡)+𝑢(𝑖, 𝑗+1, 𝑡), +𝑢 (𝑖−1, 𝑗, 𝑡)+𝑢(𝑖, 𝑗−1, 𝑡)−4∗𝑢(𝑖, 𝑗, 𝑡) 
 
 where 𝑖 and 𝑗 are the coordinates of the given molecules
 
+
 The interaction part −𝑢𝑣^2+𝑓(1−𝑢) and 𝑢𝑣^2+𝑓(1−𝑢) can be represented as follows
 
 Interaction [𝑢(𝑖, 𝑗, 𝑡+1)]=− 𝑢(𝑖, 𝑗, 𝑡)∗𝑣(𝑖, 𝑗, 𝑡)^2+𝑓(1−𝑢(𝑖, 𝑗, 𝑡))
+
 Interaction [𝑣(𝑖, 𝑗, 𝑡+1)]=𝑢(𝑖, 𝑗, 𝑡)∗𝑣(𝑖, 𝑗, 𝑡)^2−(𝑓+𝑘)𝑣(𝑖, 𝑗, 𝑡)
+
 
 Finally, state of each cell is updated based on combination of the following rules
 
